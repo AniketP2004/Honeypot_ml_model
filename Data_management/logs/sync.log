@@ -1,0 +1,39 @@
+2026-06-13 10:07:55,021 - INFO - Monitoring started
+2026-06-13 10:07:55,021 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:07:55,022 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:07:55,023 - INFO - Current position: 0
+2026-06-13 10:08:20,391 - INFO - Monitoring stopped
+2026-06-13 10:09:56,851 - INFO - Monitoring started
+2026-06-13 10:09:56,851 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:09:56,851 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:09:56,852 - INFO - Current position: 0
+2026-06-13 10:10:16,520 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:10:16,550 - INFO - Successfully appended new packets
+2026-06-13 10:10:16,552 - INFO - Position updated to: 910594
+2026-06-13 10:10:16,552 - INFO - Appended 910594 bytes
+2026-06-13 10:11:11,811 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:11:11,833 - INFO - Successfully appended new packets
+2026-06-13 10:11:11,838 - INFO - Position updated to: 910619
+2026-06-13 10:11:11,838 - INFO - Appended 25 bytes
+2026-06-13 10:12:50,080 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:12:50,099 - INFO - No new packets
+2026-06-13 10:12:57,067 - INFO - Monitoring stopped
+2026-06-13 10:13:01,084 - INFO - Monitoring started
+2026-06-13 10:13:01,084 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:01,085 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:13:01,085 - INFO - Current position: 910619
+2026-06-13 10:13:21,146 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:21,161 - INFO - No new packets
+2026-06-13 10:13:35,522 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:35,539 - INFO - No new packets
+2026-06-13 10:13:54,802 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:54,823 - INFO - No new packets
+2026-06-13 10:14:26,820 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:14:26,838 - INFO - No new packets
+2026-06-13 10:14:56,506 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:14:56,525 - INFO - Successfully appended new packets
+2026-06-13 10:14:56,527 - INFO - Position updated to: 910657
+2026-06-13 10:14:56,528 - INFO - Appended 38 bytes
+2026-06-13 10:15:11,609 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:15:11,625 - INFO - No new packets
+2026-06-13 10:15:18,741 - INFO - Monitoring stopped
