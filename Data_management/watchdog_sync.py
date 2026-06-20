@@ -4,6 +4,7 @@ import threading
 import logging
 import os
 import config
+import subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -32,10 +33,46 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
 stream_handler.setFormatter(formatter)
 
-
 #Attach both handlers
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
+
+# retrain lock
+retrain_lock = threading.Lock()
+retrain_timer = None
+
+def trigger_retrain():
+    logger.info("Starting auto retraining.")
+    try:
+        result1 = subprocess.run(
+            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\data_cleaning.py"],
+            capture_output=True, text = True
+        )
+        if result1.returncode != 0:
+            logger.error(f"data_cleaning failed: {result1.stderr}")
+            return
+        logger.info("Data cleaning complete")
+
+        result2= subprocess.run(
+            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Training\train.py"],
+            capture_output= True, text= True
+        )
+
+        if result2.returncode != 0:
+            logger.error(f"Training failed: {result2.stderr}")
+            return
+        logger.info("Retraining complete")
+
+    except Exception as e:
+        logger.error(f"Retrain pipleine crashed: {e}")
+
+def schedule_retrain():
+    global retrain_timer
+    with retrain_lock:
+        if retrain_timer:
+            retrain_timer.cancel()
+        retrain_timer = threading.Timer(30.0, trigger_retrain)
+        retrain_timer.start()
 
 def get_last_position():
     try:
@@ -92,6 +129,7 @@ def sync_new_packets():
         append_to_destination(content)
         update_position(new_pos)
         logger.info(f"Appended {new_pos - current_pos} bytes")
+        schedule_retrain()
 
 class LogFileHandler(FileSystemEventHandler):
     def on_modified(self, event):
@@ -127,7 +165,6 @@ def main():
         observer.stop()
         logger.info("Monitoring stopped")
     
-
     observer.join()
 
 

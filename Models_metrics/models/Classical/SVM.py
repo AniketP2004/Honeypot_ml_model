@@ -32,7 +32,7 @@ class SVM:
         return np.sign(approx)
     
 
-class Multiclass_SVM:
+class MulticlassSVM:
     def __init__(self, learning_rate=0.001, lamdba_param = 0.01, n_iters = 1000):
         self.lr = learning_rate
         self.lambda_param = lamdba_param

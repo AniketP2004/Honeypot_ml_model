@@ -17623,3 +17623,105 @@ paramiko.ssh_exception.MessageOrderError: Expecting packet from (30,), got 34
   │  Version=4  TTL=54  Len=44  Flags=SYN  Window=1024
   └───────────────────────────────────────────────────────────────
 
+] ===
+2026-03-16 10:50:43
+
+  ┌─ PACKET #1 ─────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 49889
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 22
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 47853
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 56
+  │  Checksum       : 0x9575
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 2470634770
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0x2670
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────
+2026-03-16 10:51:37
+=== packet_logger stopped | total=1 ===
+2026-03-16 10:52:04
+=== packet_logger started | ports=[22, 2222] ===
+2026-03-16 10:52:12
+
+
+] ===
+2026-03-16 10:50:43
+
+  ┌─ PACKET #1 ─────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 49889
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 22
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 47853
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 56
+  │  Checksum       : 0x9575
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 2470634770
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0x2670
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────
+2026-03-16 10:51:37
+=== packet_logger stopped | total=1 ===
+2026-03-16 10:52:04
+=== packet_logger started | ports=[22, 2222] ===
+2026-03-16 10:52:12
+
+  ┌─ PACKET #1 ─────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 63171
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 22
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 53863
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 50
+  │  Checksum       : 0x83fb
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 4014890688
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0x1cd4
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────
+
+

@@ -27,7 +27,7 @@ class NaiveBayes:
 
         for idx, c in enumerate(self._classes):
             prior = np.log(self._prior[idx])
-            posterior = np.sum(np.log(self._pdf(idx, x)))
+            posterior = np.sum(np.log(np.clip(self._pdf(idx, x), 1e-9, None)))
             posterior = posterior + prior 
             posteriors.append(posterior)
 
@@ -37,7 +37,7 @@ class NaiveBayes:
 
     def _pdf(self, idx, x):
         mean = self._mean[idx]
-        var = self._var[idx]
+        var = self._var[idx, :] + 1e-9
         numerator = np.exp(-((x - mean)**2)/(2 * var))
         denominator = np.sqrt(2 * np.pi * var)
 
