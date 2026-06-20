@@ -1,0 +1,151 @@
+2026-06-13 10:07:55,021 - INFO - Monitoring started
+2026-06-13 10:07:55,021 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:07:55,022 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:07:55,023 - INFO - Current position: 0
+2026-06-13 10:08:20,391 - INFO - Monitoring stopped
+2026-06-13 10:09:56,851 - INFO - Monitoring started
+2026-06-13 10:09:56,851 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:09:56,851 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:09:56,852 - INFO - Current position: 0
+2026-06-13 10:10:16,520 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:10:16,550 - INFO - Successfully appended new packets
+2026-06-13 10:10:16,552 - INFO - Position updated to: 910594
+2026-06-13 10:10:16,552 - INFO - Appended 910594 bytes
+2026-06-13 10:11:11,811 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:11:11,833 - INFO - Successfully appended new packets
+2026-06-13 10:11:11,838 - INFO - Position updated to: 910619
+2026-06-13 10:11:11,838 - INFO - Appended 25 bytes
+2026-06-13 10:12:50,080 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:12:50,099 - INFO - No new packets
+2026-06-13 10:12:57,067 - INFO - Monitoring stopped
+2026-06-13 10:13:01,084 - INFO - Monitoring started
+2026-06-13 10:13:01,084 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:01,085 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-13 10:13:01,085 - INFO - Current position: 910619
+2026-06-13 10:13:21,146 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:21,161 - INFO - No new packets
+2026-06-13 10:13:35,522 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:35,539 - INFO - No new packets
+2026-06-13 10:13:54,802 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:13:54,823 - INFO - No new packets
+2026-06-13 10:14:26,820 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:14:26,838 - INFO - No new packets
+2026-06-13 10:14:56,506 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:14:56,525 - INFO - Successfully appended new packets
+2026-06-13 10:14:56,527 - INFO - Position updated to: 910657
+2026-06-13 10:14:56,528 - INFO - Appended 38 bytes
+2026-06-13 10:15:11,609 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-13 10:15:11,625 - INFO - No new packets
+2026-06-13 10:15:18,741 - INFO - Monitoring stopped
+2026-06-19 19:38:36,157 - INFO - Monitoring started
+2026-06-19 19:38:36,158 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:38:36,158 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-19 19:38:36,172 - INFO - Current position: 910657
+2026-06-19 19:39:14,569 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:39:14,571 - INFO - No new packets
+2026-06-19 19:39:55,170 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:39:55,188 - INFO - No new packets
+2026-06-19 19:40:15,012 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:40:15,030 - INFO - No new packets
+2026-06-19 19:41:14,700 - INFO - Monitoring stopped
+2026-06-19 19:41:16,175 - INFO - Monitoring started
+2026-06-19 19:41:16,175 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:41:16,175 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-19 19:41:16,176 - INFO - Current position: 910657
+2026-06-19 19:48:49,746 - INFO - Monitoring stopped
+2026-06-19 19:48:52,669 - INFO - Monitoring started
+2026-06-19 19:48:52,669 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 19:48:52,669 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-19 19:48:52,670 - INFO - Current position: 910657
+2026-06-19 19:57:03,423 - INFO - Monitoring stopped
+2026-06-19 20:02:11,832 - INFO - Monitoring started
+2026-06-19 20:02:11,832 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-19 20:02:11,833 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-19 20:02:11,833 - INFO - Current position: 910657
+2026-06-19 20:02:17,438 - INFO - Monitoring stopped
+2026-06-20 13:23:38,327 - INFO - Monitoring started
+2026-06-20 13:23:38,328 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:23:38,328 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 13:23:38,339 - INFO - Current position: 910657
+2026-06-20 13:23:51,962 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:23:51,965 - INFO - No new packets
+2026-06-20 13:24:16,164 - INFO - Monitoring stopped
+2026-06-20 13:24:18,852 - INFO - Monitoring started
+2026-06-20 13:24:18,852 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:24:18,853 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 13:24:18,853 - INFO - Current position: 910657
+2026-06-20 13:25:11,218 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:25:11,236 - INFO - Successfully appended new packets
+2026-06-20 13:25:11,238 - INFO - Position updated to: 912147
+2026-06-20 13:25:11,240 - INFO - Appended 1490 bytes
+2026-06-20 13:25:41,242 - INFO - Starting auto retraining.
+2026-06-20 13:25:56,137 - ERROR - data_cleaning failed: Traceback (most recent call last):
+  File "C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\data_cleaning.py", line 271, in <module>
+    df = parse_log(r'C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_dataw')
+  File "C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\data_cleaning.py", line 95, in parse_log
+    with open(filename, 'r', encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\project\\Desktop\\Honeypot_New_Repo\\Data_preprocessing\\Raw_dataw'
+
+2026-06-20 13:26:13,308 - INFO - Monitoring stopped
+2026-06-20 13:28:13,881 - INFO - Monitoring started
+2026-06-20 13:28:13,881 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:28:13,882 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 13:28:13,895 - INFO - Current position: 912147
+2026-06-20 13:28:23,674 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:28:23,691 - INFO - No new packets
+2026-06-20 13:28:38,147 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:28:38,164 - INFO - No new packets
+2026-06-20 13:29:23,018 - INFO - Monitoring stopped
+2026-06-20 13:30:00,963 - INFO - Monitoring started
+2026-06-20 13:30:00,963 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:30:00,963 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 13:30:00,979 - INFO - Current position: 910657
+2026-06-20 13:30:12,976 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 13:30:12,997 - INFO - Successfully appended new packets
+2026-06-20 13:30:12,999 - INFO - Position updated to: 913460
+2026-06-20 13:30:12,999 - INFO - Appended 2803 bytes
+2026-06-20 13:30:43,006 - INFO - Starting auto retraining.
+2026-06-20 13:30:47,285 - INFO - Data cleaning complete
+2026-06-20 13:31:12,966 - INFO - Retraining complete
+2026-06-20 14:29:00,224 - INFO - Monitoring stopped
+2026-06-20 16:55:03,121 - INFO - Monitoring started
+2026-06-20 16:55:03,122 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 16:55:03,123 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 16:55:03,134 - INFO - Current position: 913460
+2026-06-20 16:57:23,521 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 16:57:23,538 - INFO - Successfully appended new packets
+2026-06-20 16:57:23,539 - INFO - Position updated to: 914944
+2026-06-20 16:57:23,540 - INFO - Appended 1484 bytes
+2026-06-20 16:57:53,547 - INFO - Starting auto retraining.
+2026-06-20 16:58:07,556 - INFO - Data cleaning complete
+2026-06-20 16:58:33,035 - INFO - Retraining complete
+2026-06-20 16:59:55,957 - INFO - Monitoring stopped
+2026-06-20 17:01:24,418 - INFO - Monitoring started
+2026-06-20 17:01:24,418 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 17:01:24,418 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 17:01:24,431 - INFO - Current position: 914944
+2026-06-20 17:02:29,373 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 17:02:29,394 - INFO - Successfully appended new packets
+2026-06-20 17:02:29,395 - INFO - Position updated to: 916257
+2026-06-20 17:02:29,395 - INFO - Appended 1313 bytes
+2026-06-20 17:02:59,398 - INFO - Starting auto retraining.
+2026-06-20 17:03:02,638 - INFO - Data cleaning complete
+2026-06-20 17:03:28,085 - INFO - Retraining complete
+2026-06-20 17:03:36,004 - INFO - Monitoring stopped
+2026-06-20 17:06:15,004 - INFO - Monitoring started
+2026-06-20 17:06:15,005 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 17:06:15,006 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 17:06:15,020 - INFO - Current position: 916257
+2026-06-20 17:06:27,091 - INFO - Monitoring started
+2026-06-20 17:06:27,091 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 17:06:27,092 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data
+2026-06-20 17:06:27,092 - INFO - Current position: 916257
+2026-06-20 17:07:18,483 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 17:07:18,503 - INFO - Successfully appended new packets
+2026-06-20 17:07:18,505 - INFO - Position updated to: 917541
+2026-06-20 17:07:18,505 - INFO - Appended 1284 bytes
+2026-06-20 17:07:48,520 - INFO - Starting auto data-cleaning and retraining.
+2026-06-20 17:07:51,825 - INFO - Data cleaning complete
+2026-06-20 17:08:16,470 - INFO - Retraining complete
+2026-06-20 17:08:59,598 - INFO - Monitoring stopped
