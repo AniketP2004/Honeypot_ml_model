@@ -58,6 +58,7 @@ def save_model_metrics(name, model, y_test, y_pred):
     with open(f"Models_metrics/metrics/classical/{name}.json", 'w') as f:
         json.dump(metrics, f, indent=4)
     print(f"{name} accuracy: {metrics['accuracy']: .4f}")
+    print("Training complete")
 
 def cross_validation_model(name, model, X, y, cv=5):
     scores = cross_val_score(model, X, y, cv=cv, scoring='accuracy')
