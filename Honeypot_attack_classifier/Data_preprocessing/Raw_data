@@ -17815,3 +17815,52 @@ paramiko.ssh_exception.MessageOrderError: Expecting packet from (30,), got 34
   │  Connection     : -
   │
   └───────────────────────────────────────────────────────────────
+2026-03-16 10:59:42
+
+  ┌─ PACKET #2 [HTTPS/TLS] ──────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 60131
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 443
+  │
+  │  NOTE: TLS encrypted — payload not readable
+  │        Connection metadata logged only
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version=4  TTL=42  Len=44  ID=57278  Checksum=0x7ea4
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags=SYN  Seq=3718741718  Window=1024  Checksum=0x18a0
+  │
+  └───────────────────────────────────────────────────────────────
+2026-03-16 10:59:42
+
+
+  ┌─ PACKET #3 [SSH/TCP] ────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 60387
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 22
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 24233
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 42
+  │  Checksum       : 0xffb9
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 1238353329
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0x6642
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────

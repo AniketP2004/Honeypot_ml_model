@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import sys
 
 # Path for scratch models
-sys.path.append(r"C:\Users\project\Desktop\Honeypot_New_Repo\Models_metrics\models\Classical")
+sys.path.append(r"C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Models_metrics\models\Classical")
 
 # Sklearn models
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
@@ -30,8 +30,8 @@ from Logistic_regression import LogisticRegression
 
 
 # Load data
-X = joblib.load(r'C:\Users\project\Desktop\Honeypot_New_Repo\X_transformed.pkl')
-y = joblib.load(r'C:\Users\project\Desktop\Honeypot_New_Repo\y_encoded.pkl')
+X = joblib.load(r'C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\X_transformed.pkl')
+y = joblib.load(r'C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\y_encoded.pkl')
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 

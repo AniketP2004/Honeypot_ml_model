@@ -45,7 +45,7 @@ def trigger_retrain():
     logger.info("Starting auto data-cleaning and retraining.")
     try:
         result1 = subprocess.run(
-            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\data_cleaning.py"],
+            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\data_cleaning.py"],
             capture_output=True, text = True
         )
         if result1.returncode != 0:
@@ -54,7 +54,7 @@ def trigger_retrain():
         logger.info("Data cleaning complete")
 
         result2= subprocess.run(
-            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Training\train.py"],
+            [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Training\train.py"],
             capture_output= True, text= True
         )
 

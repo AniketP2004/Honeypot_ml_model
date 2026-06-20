@@ -149,3 +149,34 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\project\\Des
 2026-06-20 17:07:51,825 - INFO - Data cleaning complete
 2026-06-20 17:08:16,470 - INFO - Retraining complete
 2026-06-20 17:08:59,598 - INFO - Monitoring stopped
+2026-06-20 21:10:19,896 - INFO - Monitoring started
+2026-06-20 21:10:19,897 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 21:10:19,897 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-20 21:10:19,898 - INFO - Current position: 917541
+2026-06-20 21:10:52,581 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 21:10:52,595 - INFO - Successfully appended new packets
+2026-06-20 21:10:52,597 - INFO - Position updated to: 918665
+2026-06-20 21:10:52,597 - INFO - Appended 1124 bytes
+2026-06-20 21:11:22,607 - INFO - Starting auto data-cleaning and retraining.
+2026-06-20 21:11:34,207 - INFO - Data cleaning complete
+2026-06-20 21:11:37,980 - ERROR - Training failed: Traceback (most recent call last):
+  File "C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Training\train.py", line 33, in <module>
+    X = joblib.load(r'C:\Users\project\Desktop\Honeypot_New_Repo\X_transformed.pkl')
+  File "C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\.venv\Lib\site-packages\joblib\numpy_pickle.py", line 735, in load
+    with open(filename, "rb") as f:
+         ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\project\\Desktop\\Honeypot_New_Repo\\X_transformed.pkl'
+
+2026-06-20 21:12:04,331 - INFO - Monitoring stopped
+2026-06-20 21:13:29,824 - INFO - Monitoring started
+2026-06-20 21:13:29,825 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 21:13:29,825 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-20 21:13:29,836 - INFO - Current position: 918665
+2026-06-20 21:14:02,336 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 21:14:02,358 - INFO - Successfully appended new packets
+2026-06-20 21:14:02,367 - INFO - Position updated to: 919985
+2026-06-20 21:14:02,367 - INFO - Appended 1320 bytes
+2026-06-20 21:14:32,382 - INFO - Starting auto data-cleaning and retraining.
+2026-06-20 21:14:35,780 - INFO - Data cleaning complete
+2026-06-20 21:15:00,668 - INFO - Retraining complete
+2026-06-20 21:17:45,804 - INFO - Monitoring stopped

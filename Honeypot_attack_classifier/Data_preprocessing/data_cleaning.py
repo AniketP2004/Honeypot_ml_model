@@ -268,7 +268,7 @@ def get_preprocessor():
 if __name__ == '__main__':
 
     print("Parsing log...")
-    df = parse_log(r'C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\Raw_data')
+    df = parse_log(r'C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data')
 
     print("Assigning labels...")
     timestamp_counts = df['timestamp'].value_counts().to_dict()
