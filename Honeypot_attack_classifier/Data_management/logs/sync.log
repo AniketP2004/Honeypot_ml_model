@@ -180,3 +180,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\project\\Des
 2026-06-20 21:14:35,780 - INFO - Data cleaning complete
 2026-06-20 21:15:00,668 - INFO - Retraining complete
 2026-06-20 21:17:45,804 - INFO - Monitoring stopped
+2026-06-20 21:46:14,622 - INFO - Monitoring started
+2026-06-20 21:46:14,622 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-20 21:46:14,623 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-20 21:46:14,634 - INFO - Current position: 919985
+2026-06-20 21:46:17,222 - INFO - Monitoring stopped
