@@ -42,7 +42,7 @@ retrain_lock = threading.Lock()
 retrain_timer = None
 
 def trigger_retrain():
-    logger.info("Starting auto retraining.")
+    logger.info("Starting auto data-cleaning and retraining.")
     try:
         result1 = subprocess.run(
             [sys.executable, r"C:\Users\project\Desktop\Honeypot_New_Repo\Data_preprocessing\data_cleaning.py"],

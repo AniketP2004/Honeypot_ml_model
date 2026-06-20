@@ -17725,3 +17725,93 @@ paramiko.ssh_exception.MessageOrderError: Expecting packet from (30,), got 34
   └───────────────────────────────────────────────────────────────
 
 
+026-03-16 10:52:39
+=== packet_logger stopped | total=1 ===
+2026-03-16 10:53:17
+=== packet_logger started | ports=[22, 2222] ===
+2026-03-16 10:53:23
+
+  ┌─ PACKET #1 ─────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 43293
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 2222
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 15513
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 58
+  │  Checksum       : 0x11ca
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 1923605035
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0x5b1e
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────
+2026-03-16 10:53:59
+
+
+  ┌─ PACKET #2 ─────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 53558
+  │  DEST IP        : 100.98.115.75
+  │  DEST PORT      : 22
+  │
+  ├─ IP HEADER ───────────────────────────────────────────────────
+  │  Version        : 4
+  │  Header Len     : 20 bytes
+  │  TOS            : 0
+  │  Total Length   : 44 bytes
+  │  Identification : 43793
+  │  Flags          : 0  Fragment Offset: 0
+  │  TTL            : 53
+  │  Checksum       : 0xa851
+  │
+  ├─ TCP HEADER ──────────────────────────────────────────────────
+  │  Flags          : SYN
+  │  Sequence       : 2581794294
+  │  Ack Number     : 0
+  │  Header Len     : 24 bytes
+  │  Window Size    : 1024
+  │  Checksum       : 0xe896
+  │  Urgent Pointer : 0
+  │
+  └───────────────────────────────────────────────────────────────
+2026-03-16 10:54:05
+=== packet_logger stopped | total=2 ===
+2026-03-16 10:58:39
+=== packet_logger started | ports=[22, 2222, 80, 443] ===
+2026-03-16 10:59:35
+
+  ┌─ PACKET #1 [HTTP] ────────────────────────────────────────────────
+  │
+  │  SOURCE IP      : 100.85.246.102
+  │  SOURCE PORT    : 49708
+  │  DEST PORT      : 80
+  │
+  ├─ REQUEST LINE ────────────────────────────────────────────────
+  │  Method         : GET
+  │  Path           : /admin
+  │  HTTP Version   : HTTP/1.1
+  │
+  ├─ HEADERS ────────────────────────────────────────────────────
+  │  Host           : 100.98.115.75
+  │  User-Agent     : curl/8.17.0
+  │  Referer        : -
+  │  Content-Type   : -
+  │  Accept         : */*
+  │  Accept-Encoding: -
+  │  Connection     : -
+  │
+  └───────────────────────────────────────────────────────────────
