@@ -185,3 +185,27 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\project\\Des
 2026-06-20 21:46:14,623 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
 2026-06-20 21:46:14,634 - INFO - Current position: 919985
 2026-06-20 21:46:17,222 - INFO - Monitoring stopped
+2026-06-21 14:13:05,174 - INFO - Monitoring started
+2026-06-21 14:13:05,175 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-21 14:13:05,175 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-21 14:13:05,186 - INFO - Current position: 919985
+2026-06-21 14:13:09,546 - INFO - Monitoring stopped
+2026-06-21 14:13:13,076 - INFO - Monitoring started
+2026-06-21 14:13:13,076 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-21 14:13:13,077 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-21 14:13:13,077 - INFO - Current position: 919985
+2026-06-21 14:16:59,304 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-21 14:16:59,361 - INFO - Successfully appended new packets
+2026-06-21 14:16:59,362 - INFO - Position updated to: 2428207
+2026-06-21 14:16:59,363 - INFO - Appended 1508222 bytes
+2026-06-21 14:17:29,375 - INFO - Starting auto data-cleaning and retraining.
+2026-06-21 14:17:43,597 - INFO - Data cleaning complete
+2026-06-21 14:18:40,961 - INFO - Retraining complete
+2026-06-21 14:18:50,159 - INFO - Monitoring stopped
+2026-06-22 11:06:14,138 - INFO - Monitoring started
+2026-06-22 11:06:14,138 - INFO - Source: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-22 11:06:14,139 - INFO - Destination: C:\Users\project\Desktop\Honeypot_New_Repo\Honeypot_attack_classifier\Data_preprocessing\Raw_data
+2026-06-22 11:06:14,149 - INFO - Current position: 2428207
+2026-06-22 11:06:29,202 - INFO - File modification detected: C:\Users\project\Desktop\honeypot\packet_logger.log
+2026-06-22 11:06:29,204 - INFO - No new packets
+2026-06-22 11:26:29,917 - INFO - Monitoring stopped

@@ -1,68 +1,85 @@
 {
-    "accuracy": 0.9936305732484076,
+    "accuracy": 0.9915611814345991,
     "classification_report": {
         "0": {
-            "precision": 0.9850746268656716,
+            "precision": 0.9761904761904762,
             "recall": 1.0,
-            "f1-score": 0.9924812030075187,
-            "support": 66.0
+            "f1-score": 0.9879518072289156,
+            "support": 164.0
         },
         "1": {
             "precision": 1.0,
             "recall": 1.0,
             "f1-score": 1.0,
-            "support": 84.0
+            "support": 230.0
+        },
+        "2": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1-score": 0.975609756097561,
+            "support": 21.0
         },
         "3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1-score": 0.0,
-            "support": 1.0
+            "precision": 1.0,
+            "recall": 0.9302325581395349,
+            "f1-score": 0.963855421686747,
+            "support": 43.0
         },
         "4": {
             "precision": 1.0,
             "recall": 1.0,
             "f1-score": 1.0,
-            "support": 6.0
+            "support": 16.0
         },
-        "accuracy": 0.9936305732484076,
+        "accuracy": 0.9915611814345991,
         "macro avg": {
-            "precision": 0.7462686567164178,
-            "recall": 0.75,
-            "f1-score": 0.7481203007518797,
-            "support": 157.0
+            "precision": 0.9952380952380953,
+            "recall": 0.9765227021040974,
+            "f1-score": 0.9854833970026448,
+            "support": 474.0
         },
         "weighted avg": {
-            "precision": 0.9873562125677346,
-            "recall": 0.9936305732484076,
-            "f1-score": 0.9904698050859634,
-            "support": 157.0
+            "precision": 0.9917621056861563,
+            "recall": 0.9915611814345991,
+            "f1-score": 0.9914719080086942,
+            "support": 474.0
         }
     },
     "confusion_matrix": [
         [
-            66,
+            164,
+            0,
             0,
             0,
             0
         ],
         [
             0,
-            84,
+            230,
+            0,
             0,
             0
         ],
         [
             1,
             0,
+            20,
             0,
+            0
+        ],
+        [
+            3,
+            0,
+            0,
+            40,
             0
         ],
         [
             0,
             0,
             0,
-            6
+            0,
+            16
         ]
     ]
 }

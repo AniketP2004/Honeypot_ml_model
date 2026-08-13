@@ -296,11 +296,12 @@ if __name__ == '__main__':
     joblib.dump(y_encoded, 'y_encoded.pkl')
     joblib.dump(le, 'label_encoder.pkl')    
 
-    preprocessor = get_preprocessor()
-    X_transformed = preprocessor.fit_transform(X, y_encoded)
-    joblib.dump(preprocessor, 'preprocessor.pkl')
-    joblib.dump(X_transformed, 'X_transformed.pkl')
-    print(X_transformed.shape)
+        # At top of training section
+    # preprocessor = get_preprocessor()
+    # X_transformed = preprocessor.fit_transform(X, y_encoded)
+    # joblib.dump(preprocessor, 'preprocessor.pkl')
+    # joblib.dump(X_transformed, 'X_transformed.pkl')
+    # print(X_transformed.shape)
 
     print(f"Saved X_raw.pkl {X.shape}, y_encoded.pkl {y_encoded.shape}")
     print(f"Classes: {le.classes_}")
