@@ -1,5 +1,6 @@
 import joblib 
 import numpy as np
+import joblib, pandas as pd
 import json
 import os
 from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
@@ -39,7 +40,7 @@ from data_cleaning import get_preprocessor
 
 # Load data
 def load_data():
-    BASE = r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics'
+    BASE = r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics'
     X = joblib.load(rf'{BASE}\X_cleaned.pkl')
     y_multi = joblib.load(rf'{BASE}\y_multiclass.pkl')
     y_binary = joblib.load(rf'{BASE}\y_binary.pkl')
@@ -73,7 +74,7 @@ def fit_preprocessor(X_train, y_multi_train):
     preprocessor = get_preprocessor()
     X_train_transformed= preprocessor.fit_transform(X_train, y_multi_train)
 
-    save_path= r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\preprocessor.pkl'
+    save_path= r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\preprocessor.pkl'
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     joblib.dump(preprocessor, save_path)
 
@@ -95,7 +96,7 @@ def train_binary_model(X_train_transformed, y_binary_train):
     sample_weights = compute_sample_weight('balanced', y_binary_train)
     model.fit(X_train_transformed, y_binary_train, sample_weight=sample_weights)
     os.makedirs('models', exist_ok=True)
-    joblib.dump(model, r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\binary_models.pkl')
+    joblib.dump(model, r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\binary_models.pkl')
     print("Binary model saved")
     return model
 
@@ -120,6 +121,7 @@ if __name__=='__main__':
         'gradient_boosting': GradientBoostingClassifier(n_estimators=170, max_depth=4, random_state=42, subsample=0.8, learning_rate=0.09)
     }
     sample_weights_multi = compute_sample_weight('balanced', ym_train)
+    print("Train label distribution:", pd.Series(ym_train).value_counts())  
 
     for name, model in LIBRARY.items():
         print(f"Training {name}..")
@@ -127,29 +129,19 @@ if __name__=='__main__':
             model.fit(X_train_transformed, ym_train, sample_weight=sample_weights_multi)
         else:
             model.fit(X_train_transformed, ym_train, sample_weight= sample_weights_multi)
-        joblib.dump(model, rf'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\{name}_model.pkl')
+        joblib.dump(model, rf'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\{name}_model.pkl')
 
-    # # Scratch models
-    # SCRATCH={
-    #     'knn' : KNN(k=5),
-    #     'naive_bayes': NaiveBayes(),
-    #     'decision_tree': DecisionTree(),
-    #     'svm': MulticlassSVM(),
-    #     'logreg': LogisticRegression()
-    # }
-    # for name, model in SCRATCH.items():
-    #     print(f"Training scratch {name}..")
-    #     model.fit(X_scratch, y_scratch)
-    #     joblib.dump(model, rf'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\{name}_model.pkl')
-    #     print(f"Saved {name}")
-
-    joblib.dump((X_test, ym_test, yb_test), r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\test_split.pkl')
+    gb_model = LIBRARY['gradient_boosting']
+    y_pred = gb_model.predict(X_test_transformed)
+    print(classification_report(ym_test, y_pred, target_names=le_multi.classes_))
+    print(confusion_matrix(ym_test, y_pred))
+    joblib.dump((X_test, ym_test, yb_test), r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\test_split.pkl')
     print("Test split saved= models/test_split.pkl")
-import joblib, pandas as pd
 
-X = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\X_cleaned.pkl')
-y_multi = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\y_multiclass.pkl')
-le_multi = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics\label_encoder_multi.pkl')
+
+X = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\X_cleaned.pkl')
+y_multi = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\y_multiclass.pkl')
+le_multi = joblib.load(r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\label_encoder_multi.pkl')
 
 labels = le_multi.inverse_transform(y_multi)
 brute = X[labels == 'brute_force']

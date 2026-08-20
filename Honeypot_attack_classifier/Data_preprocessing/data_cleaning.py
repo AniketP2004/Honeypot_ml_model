@@ -273,9 +273,9 @@ if __name__ == '__main__':
     ]
 
     print("Loading raw data...")
-    X_raw: pd.DataFrame = joblib.load('X_raw.pkl')
-    y_multi_raw = joblib.load('y_encoded.pkl')
-    le_multi: LabelEncoder = joblib.load('label_encoder.pkl')
+    X_raw: pd.DataFrame = joblib.load(os.path.join('Data_preprocessing', 'X_raw.pkl'))
+    y_multi_raw = joblib.load(os.path.join('Data_preprocessing', 'y_encoded.pkl'))
+    le_multi: LabelEncoder = joblib.load(os.path.join('Data_preprocessing', 'label_encoder.pkl'))
 
 
     X_raw['label'] = le_multi.inverse_transform(y_multi_raw)
@@ -317,7 +317,7 @@ if __name__ == '__main__':
     y_multi_enc = le_multi_new.fit_transform(y_multi_labels)
     y_binary_enc = le_binary.fit_transform(y_binary_labels)
 
-    SAVE_DIR = r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics\metrics'
+    SAVE_DIR = r'C:\Users\project\Desktop\Honeypot_new_repo\Honeypot_attack_classifier\Models_metrics'
     joblib.dump(X_cleaned,     os.path.join(SAVE_DIR, 'X_cleaned.pkl'))
     joblib.dump(y_multi_enc,   os.path.join(SAVE_DIR, 'y_multiclass.pkl'))
     joblib.dump(y_binary_enc,  os.path.join(SAVE_DIR, 'y_binary.pkl'))
@@ -329,3 +329,5 @@ if __name__ == '__main__':
     print(f"Binary labels    : {le_binary.classes_}")
     print(f"Label dist (multi): {pd.Series(y_multi_enc).value_counts().to_dict()}")
     print(f"Label dist (binary): {pd.Series(y_binary_enc).value_counts().to_dict()}")
+
+    print(X_cleaned.columns.tolist())

@@ -299,12 +299,12 @@ def save_attack_log(packet_dic, attack_type):
     ATTACK_LOG_STORE[attack_type].append(entry)
 
 
-def persist_logs(path='attack_logs.json'):
+def persist_logs(path=r'Data_preprocessing\attack_logs.json'):
     with open(path, 'w') as f:
         json.dump(ATTACK_LOG_STORE, f, indent=2)
 
 
-def load_logs(path='attack_logs.json'):
+def load_logs(path=r'Data_preprocessing\attack_logs.json'):
     global ATTACK_LOG_STORE
     if os.path.exists(path):
         with open(path, 'r') as f:
@@ -356,7 +356,8 @@ if __name__ == '__main__':
         DROP_COLS = ['packet_len', 'ssh_username', 'country', 'isp', 'as_number']
         df = df.drop(columns=DROP_COLS, errors='ignore')
         X_to_save = df.drop(columns=['label', 'binary_label'], errors='ignore')
-        joblib.dump(X_to_save, 'X_raw.pkl')
-        joblib.dump(y_encoded, 'y_encoded.pkl')
-        joblib.dump(le, 'label_encoder.pkl')
+        joblib.dump(X_to_save, os.path.join('Data_preprocessing', 'X_raw.pkl.pkl'))
+        joblib.dump(y_encoded, os.path.join('Data_preprocessing', 'y_encoded.pkl'))
+        joblib.dump(le, os.path.join('Data_preprocessing', 'label_encoder.pkl'))
+
         

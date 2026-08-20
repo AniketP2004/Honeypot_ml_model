@@ -1,1 +1,3 @@
-"Frontend = vanilla HTML/CSS/JS only, no frameworks. Backend = FastAPI + PostgreSQL"
+Frontend = vanilla HTML/CSS/JS only, no frameworks. Backend = FastAPI + PostgreSQL.
+Structure: /backend for FastAPI code, /frontend for HTML/CSS/JS.
+ML models in /Models_metrics, loaded via joblib.
