@@ -356,7 +356,7 @@ if __name__ == '__main__':
         DROP_COLS = ['packet_len', 'ssh_username', 'country', 'isp', 'as_number']
         df = df.drop(columns=DROP_COLS, errors='ignore')
         X_to_save = df.drop(columns=['label', 'binary_label'], errors='ignore')
-        joblib.dump(X_to_save, os.path.join('Data_preprocessing', 'X_raw.pkl.pkl'))
+        joblib.dump(X_to_save, os.path.join('Data_preprocessing', 'X_raw.pkl'))
         joblib.dump(y_encoded, os.path.join('Data_preprocessing', 'y_encoded.pkl'))
         joblib.dump(le, os.path.join('Data_preprocessing', 'label_encoder.pkl'))
 
