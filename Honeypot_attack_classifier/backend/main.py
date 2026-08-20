@@ -32,6 +32,7 @@ def health():
 
 @app.on_event("startup")
 def startup():
+    Base.metadata.create_all(bind=engine)
     ml_models.load_all()
 
 VALID_MODELS = ["random_forest", "xgboost", "gradient_boosting"]
