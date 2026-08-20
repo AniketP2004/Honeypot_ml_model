@@ -273,8 +273,8 @@
     .hero::after {
       content: "";
       position: absolute;
-      width: 380px;
-      height: 380px;
+      width: min(420px, 90vw);
+      height: min(420px, 90vw);
       background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
       top: 50%;
       left: 50%;
@@ -1731,11 +1731,11 @@
       <article class="research-card">
         <span class="research-card__tag research-card__tag--our">Our Publication</span>
         <h3 class="research-card__title">AI-Driven Cloud Honeypot for Attack Detection</h3>
-        <p class="research-card__authors">Prof. Shilpa Vishwabrahma, Vaishnavi Chavan, Yuvraj Dudhal, Aniket Patil, Akash Wavhal[cite: 2]</p>
+        <p class="research-card__authors">Prof. Shilpa Vishwabrahma, Vaishnavi Chavan, Yuvraj Dudhal, Aniket Patil, Akash Wavhal</p>
         <p class="research-card__abstract">
-          Presents an operational multi-protocol deception engine deployed on cloud infrastructure[cite: 2]. Combines cryptographic SSH handshakes and HTTP traps with inline tree-based classifiers to bridge the defensive intelligence gap[cite: 2].
+          Presents an operational multi-protocol deception engine deployed on cloud infrastructure. Combines cryptographic SSH handshakes and HTTP traps with inline tree-based classifiers to bridge the defensive intelligence gap.
         </p>
-        <p class="research-card__meta">IJRTI &bull; Paper ID: IJRTI2511082[cite: 2]</p>
+        <p class="research-card__meta">IJRTI &bull; Paper ID: IJRTI2511082</p>
         <a href="./assets/AI-Driven-Cloud-Honeypot-Network.pdf" class="research-card__link" target="_blank" rel="noopener noreferrer">
           Read Paper &rarr;
         </a>
@@ -1746,9 +1746,9 @@
         <span class="research-card__tag research-card__tag--ref">Reference Paper</span>
         <h3 class="research-card__title">Intelligent Threat Detection—AI-Driven Analysis of Honeypot Data to Counter Cyber Threats</h3>
         <p class="research-card__abstract">
-          Proposes RAG-based command mapping using Bashlex parsing, LLM description modeling, and vector embeddings to detect obfuscated terminal attacks and map them to MITRE ATT&amp;CK categories[cite: 2]. Uses direct IoC filtering to flag known attacker IPs and credentials for instant alerting, bypassing the ML pipeline[cite: 2]. Connects high-interaction honeypot data with critical infrastructure logs for real-time anomaly detection[cite: 2].
+          Proposes RAG-based command mapping using Bashlex parsing, LLM description modeling, and vector embeddings to detect obfuscated terminal attacks and map them to MITRE ATT&amp;CK categories. Uses direct IoC filtering to flag known attacker IPs and credentials for instant alerting, bypassing the ML pipeline. Connects high-interaction honeypot data with critical infrastructure logs for real-time anomaly detection.
         </p>
-        <p class="research-card__meta">MDPI Electronics &bull; Literature Context[cite: 2]</p>
+        <p class="research-card__meta">MDPI Electronics &bull; Literature Context</p>
       </article>
     </div>
   </section>
@@ -1758,7 +1758,7 @@
   <!-- ================================================================== -->
   <script>
     // 1. API Configuration
-    const API_BASE_URL = "https://honeypot-ml-model-6.onrender.com";
+    const API_BASE_URL = "https://honeypot-ml-model-4.onrender.com";
 
     // 2. Mobile Navigation Toggle Logic
     const navToggle = document.getElementById("nav-toggle");
