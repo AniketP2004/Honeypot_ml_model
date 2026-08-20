@@ -1,0 +1,29 @@
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editors
+.vscode/
+.idea/
+
+# Local DB files (if any)
+*.db
+*.sqlite3
+
+Models_metrics/X_cleaned.pkl
+Models_metrics/y_binary.pkl
+Models_metrics/y_multiclass.pkl
+Models_metrics/test_split.pkl
