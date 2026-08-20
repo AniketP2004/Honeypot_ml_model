@@ -25,15 +25,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+@app.get("/")
 @app.get("/health")
 def health():
     return{"Status": "Ok"}
 
 @app.on_event("startup")
 def startup():
-    Base.metadata.create_all(bind=engine)
-    ml_models.load_all()
+    try:
+        Base.metadata.create_all(bind=engine)
+    except Exception as e:
+        print(f"DB initialization warning: {e}")
+
+    try:
+        ml_models.load_all()
+    except Exception as e:
+        print(f"Model load warning: {e}")
+        
 
 VALID_MODELS = ["random_forest", "xgboost", "gradient_boosting"]
 
@@ -41,6 +49,9 @@ VALID_MODELS = ["random_forest", "xgboost", "gradient_boosting"]
 def predict(request: PredictRequest, db: Session = Depends(get_db)):
     if request.model_name not in VALID_MODELS:
         raise HTTPException(status_code=400, detail=f"model_name must be one of the {VALID_MODELS}")
+
+    if not REG:
+        ml_models.load_all()
 
     df = build_features_row(request.dict())
     preprocessor = REG["preprocessor"]
