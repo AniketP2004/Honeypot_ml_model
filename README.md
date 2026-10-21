@@ -145,7 +145,7 @@ Deployed on **Render**. On the free tier, the managed PostgreSQL instance expire
 
 | Name | Role |
 |---|---|
-| **Aniket** ([@AniketP2004](https://github.com/AniketP2004)) | ML Engineer |
+| Aniket Patil  | ML Engineer |
 | Aakash Wavhal | Backend & Honeypot Infrastructure Lead |
 | Vaishnavi Chavan | Backend & Honeypot Infrastructure Lead |
 | Yuvraj Dudhal | Adversarial Testing Lead |
